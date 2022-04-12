@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <script src="main.js" type="text/javascript"></script>
+    
+</head>
+<body>
+  
+  <h4><center>XIANGYING LI'S PERSONAL WEBSITE</center</h4>
+    <hr/>
+    
+      <div id="me">
+        <fieldset >
+        <img width=200 height="180" src="https://img1.baidu.com/it/u=3645682840,2277227531&fm=253&fmt=auto&app=138&f=JPEG?w=268&h=381"   alt="picture">
+        <figcaption style="color: deeppink;">XIANGYING LI</figcaption>
+        <p style="color: rgb(98, 0, 255);">Web Designer  Data Analysis</p>
+        <p><a href="resume.text" onClick="download_file()" >Download</a>&nbsp;&nbsp;
+        <a href="#contact" >Contact me</a></p>
+       
+    </fieldset></div>
+   
+    <hr/>
+  
+    <form id=form1 action="https://httpbin.org/post" method="post">
+     
+        <fieldset>
+         <legend><strong>About Me</strong></legend>
+         <div id="Honesty">
+         <label for="Honesty" title="Free format"> <strong>Seneca Honesty Statement</strong> </label><br>
+        
+         <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic 
+            Policy. No part of this assessment has been copied manually or electronically from any other 
+            source (including web sites) except for the information supplied by the WEB222 instructors and / 
+            or made available in this assessment for my use. I also declare that no part of this assignment 
+            has been distributed to other students.</p>
+            <p>Date: April 9 2022</p></div>
+            <div id="information">
+         <label for="information" title="Free format"><strong>Basic Information</strong></label><br><br>
+
+            <strong>Name:</strong> Xiangying Li<br> 
+            <strong>Language</strong> English Mandarin<br> 
+            <strong>Course:</strong>WEB 222 <br /> 
+            <strong>Class Section:</strong>NHH<br> 
+            <strong>Professor's Name:</strong>Muath Alzghool<br>
+            <strong>Telephone:</strong> 647-666-889<br>
+            <strong>Email:</strong>xli423@myseneca.ca<br></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         </fieldset> 
+        <br>
+        </form>
+        <H5><center>EDUCATION SECTION</center></H5>
+        <hr/>
+        <form class="eduction1" action="https://httpbin.org/post" method="post">
+          <div id="time1" style="color:rgb(238, 13, 13);">
+            <p>2020-2024(expected)</p>
+            <p>Bachelor's Degree</p>
+          </div>
+          <div id="school1">
+            <p>Bachelor's Degree</p>
+            <p>Seneca College</p>
+            <p>Under the supervision of <span style="color:yellow">DR.Muath Alzghool</span></p>
+          </div><hr/>
+          
+        </form>
+        <form class="eduction2" action="https://httpbin.org/post" method="post">
+          <div id="time2" style="color:rgb(238, 13, 13) ;">
+            <p>2020-2024(expected)</p>
+            <p>Bachelor's Degree</p>
+          </div>
+          <div id="school2">
+            <p>Bachelor's Degree</p>
+            <p>Seneca College</p>
+            <p>Under the supervision of <span style="color:yellow">DR.Lydia Li</span></p>
+          </div><hr/>
+        </form>
+        <hr/>
+          <div class="container" id="contact">
+            <div class="content-1" style="max-width:500px">
+              <h4 class="center"><b>Contact me</b></h4>
+              <form action="https://httpbin.org/post" target="_blank" method="POST">
+                <div class="section">
+                  <label>Name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 
+                <input class="input border opacity-min" type="text" name="Name" minlength="2" maxlength="50" required>
+                </div>
+                <div class="section">
+                  <label>Email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <input class="input border opacity-min" type="text" name="Email" minlength="2" maxlength="50" required>
+                </div>
+                <div class="section">
+                    <label>Address</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input class="input border opacity-min" type="text" name="address" minlength="5" required>
+                  </div>
+                  <div class="section">
+                    <label>Post Code</label>&nbsp;&nbsp;
+                    <input class="input border opacity-min" type="text" pattern = "^[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]$" minlength="7" maxlength="7"  name="code" required>
+                  </div>
+                  <div class="section">  
+                  <label for="city">city</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 
+                     <input list="cities" name="city" id="city">
+                     <datalist id="cities">
+                        <option value="Oshawa">
+                        <option value="London">
+                        <option value="Kingston">
+                        <option value="Toronto">
+                        <option value="Hamilton">
+                      </datalist>
+                  </div>
+                  <div class="section">
+                      <p class="hide">
+                      
+                          <input  type="radio"   name="other" value="question" onclick="radioChange();">Question
+                          <input  type="radio"   name="other" value="Comment" onclick="radioChange();">Comment
+                          <input type="radio" name="other" value="Hiring" onclick="radioChange();">Hiring
+                      </p>
+                      <div id="hiddenDiv" class="hide" style="display: none">
+                        <label id="hourlyRate">Hourly Rate</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input class="input border opacity-min" type="number" min="1" max="10000" name="rate" />
+                      </div>
+                      
+                          
+                  </div>
+                    
+                 <div class="section">
+                  <label>Message</label><br>
+                  <input textarea type ="text" id="message"  cols="20" rows="5" name="Message">
+                  
+                </div>
+                <input type="submit" class="container" value="Submit" />
+                <button type="reset" class="container">Reset</button>
+                </form>
+            </div>
+    
+         </body>
+      </html>

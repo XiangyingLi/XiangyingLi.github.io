@@ -1,0 +1,77 @@
+body {
+    margin: 0 auto;                 
+    width: 900px;
+    background: lightblue;
+    border: 1px solid blue;
+ }
+#information {
+ line-height:30px;
+ background-color:#eeeeee;
+ height:340px;
+ width: 250px;
+ float:right;
+ padding:5px;	
+ text-align:left;      
+}
+#Honesty {
+ line-height:25px;
+ height:310px;
+ width:350px;
+ padding: 20px 200px 20px 50px;
+ background: padding-box;
+ background-color:hsl(180, 91%, 55%);
+ float:left;
+}
+figcaption {
+ color: deeppink;
+
+}
+#me {
+ display: table-cell;
+   vertical-align: middle;
+   text-align: center;
+ padding: 20px 250px 20px 250px;
+ background: padding-box;
+  
+   border: center solid blue;
+
+}
+#time1 {
+ 
+ background-color:#e91313;
+ padding: 20px 20px 20px 20px;
+ background: padding-box;
+ float:left;
+   text-align:center;      
+}
+.eduction1{
+ margin:auto; padding:15px; width:600px; border:solid chartreuse;
+}
+
+.eduction2{
+ margin:auto; padding:15px; width:600px; border:solid cyan; 
+}
+
+#time2 {
+ 
+ background-color:#e91313;
+ padding: 20px 20px 20px 20px;
+ background: padding-box;
+ float:left;
+   text-align:center;      
+}
+label{
+  text-align: left;
+}
+input, textarea {
+    flex: 7;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    padding: 5px;
+  }
+  
+  textarea {
+    height: 60px;
+  }
+  
+  
